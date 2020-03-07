@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
+import {Text, View} from 'react-native';
+
+EStyleSheet.build({
+  //$textColor: '#0275d8'
+});
 
 export default class App extends Component {
   render() {
@@ -11,7 +16,7 @@ export default class App extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#021435',
@@ -21,7 +26,7 @@ const styles = StyleSheet.create({
   meuTexto: {
     color: '#f9f9f9',
     fontFamily: 'monospace',
-    fontSize: 40,
+    fontSize: '2 rem',
     fontWeight: 'bold',
     fontStyle: 'italic',
   },
